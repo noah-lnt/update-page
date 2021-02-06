@@ -4,17 +4,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maintenance cours</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="icon" href="favicon.ico" />
   </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+
+    html,
+    body {
+      display: flex;
+      width: 100%;
+      margin: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: "Nunito", sans-serif;
+    }
+
+    body {
+      background: url("img/background.jpg") no-repeat left fixed;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+
+    #card {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 4rem;
+      margin: auto;
+      border-radius: 1rem;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 640px) {
+      #card {
+        padding: 1rem;
+        max-width: calc(100% - 4rem);
+      }
+    }
+
+    #image {
+      margin-bottom: 10px;
+    }
+
+    #title {
+      font-size: 42px;
+      margin: 0;
+      margin-bottom: 10px;
+      color: #333333;
+    }
+
+    #subtitle {
+      font-size: 18px;
+      margin: 0;
+      margin-bottom: 40px;
+      color: #666666;
+    }
+
+    #details {
+      font-size: 12px;
+      margin: 0;
+      color: #666666;
+    }
+
+    a {
+      color: #8ab4f8;
+    }
+  </style>
+
   <body>
     <div id="card">
-      <img id="image" height="96" src="img/warning.svg"/>
+      <img id="image" height="96" src="img/warning.svg" />
       <h1 id="title">Maintenance en cours</h1>
       <h2 id="subtitle">Le site sera bientôt à nouveau en ligne</h2>
       <p id="details">
         Nous contacter :
-        <a href="mailto:noahlanfri@hotmail.com">noahlanfri@hotmail.com</a>
+        <a href="mailto:noahlanfri@outlook.com">noahlanfri@outlook.com</a>
       </p>
     </div>
   </body>
